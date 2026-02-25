@@ -1,0 +1,71 @@
+/* ===========================
+   TAILWIND CORE DIRECTIVES
+=========================== */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ===========================
+   MAYUR MANE PATIL PORTFOLIO
+   Brand Colors:
+   Background: #001621
+   Accent: #ff4103
+=========================== */
+
+@layer base {
+
+  :root {
+
+    /* === BRAND COLORS === */
+
+    /* Dark Navy Background (#001621) */
+    --background: 197 100% 7%;
+    --foreground: 210 40% 98%;
+
+    /* Cards slightly lighter navy */
+    --card: 197 80% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 197 80% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Accent Orange (#ff4103) */
+    --primary: 16 100% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 197 60% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 197 40% 18%;
+    --muted-foreground: 215 20% 70%;
+
+    --accent: 16 100% 50%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 197 40% 20%;
+    --input: 197 40% 20%;
+    --ring: 16 100% 50%;
+
+    --radius: 0.75rem;
+  }
+
+  /* Remove horizontal scroll globally */
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
